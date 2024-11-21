@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <!-- First Page: Nickname Question -->
+    <div id="nickname-section" class="page">
+      <h1>What is your nickname that I call you?</h1>
+      <input type="text" id="nickname" placeholder="Type your nickname here">
+      <button id="nickname-btn">Submit</button>
+      <p id="error-message"></p >
+    </div>
+
+    <!-- Second Page: Age Question -->
+    <div id="age-question" class="page hidden">
+      <h1>How old are you today?</h1>
+      <div>
+        <button class="age-btn">21</button>
+        <button class="age-btn">26</button>
+        <button class="age-btn">27</button>
+        <button class="age-btn">34</button>
+      </div>
+    </div>
+
+    <!-- Third Page: Messages -->
+    <div id="messages" class="page hidden">
+      <div id="message-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

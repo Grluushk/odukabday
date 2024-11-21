@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .page {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* First Page Styles */
+  #nickname-section {
+    background: url('p1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #nickname-section h1 {
+    color: red;
+  }
+  
+  #error-message {
+    color: red;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Second Page Styles */
+  #age-question {
+    background: url('p2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #age-question h1 {
+    color: red;
+  }
+  
+ /* Third Page Styles */
+/* Third Page Styles */
+#messages {
+    background: pink;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .heart-message {
+    border: 5px solid #ff69b4;
+    background: white;
+    padding: 20px;
+    font-size: 2rem; /* Large font size */
+    font-weight: bold;
+    border-radius: 20px; /* Rounded corners */
+    position: absolute;
+    animation: fadeIn 1s;
+    display: none;
+    width: 300px; /* Fixed width */
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
